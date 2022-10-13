@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Copyright Quiz - </title>
+</head>
+<body>
+
+<h1>Copyright Law Quiz</h1>
+<p>from http://www.teachingcopyright.org/handout/copy-quiz</p>
+
+<p>Answer each question as true or false</p>
+
+<h2>The Motion Picture Association of America has anti-piracy sniffing dogs.</h2> <p id="a2"> </p><button type="button" onclick="document.getElementById('a2').innerHTML = 'True. According to the MPAA, they have trained two black Labradors named Lucky and Flo to sniff out DVD piracy.'">True</button><button type="button" onclick="increase(); disabled=true;" >False</button>
+<h2>Sam buys a new band's CD but decides he doesn't like the singer, so he resells the CD on eBay. That's legal.</h2> <p id="a3"> </p><button type="button" onclick="document.getElementById('a3').innerHTML = 'True. Reselling a CD that you bought is legal according to the First Sale Doctrine.'">True</button><button type="button" onclick="increase(); disabled=true;" >False</button>
+<h2>The sole purpose of copyright is to make authors money and protect them from getting their works stolen.</h2> <p id="a4"> </p><button type="button" onclick="increase(); disabled=true;">True</button><button type="button" onclick="document.getElementById('a4').innerHTML = 'False. Copyright was established to encourage the growth of science, education, and the arts.'">False</button>
+<h2>Amy tells Daniel about her summer vacation, and he says he'd love to see her pictures. Amy uses a peer-to-peer (P2P) file-sharing program to upload the photographs she took at camp so he can download them. That's copyright infringement.</h2> <p id="a5"> </p><button type="button" onclick="increase(); disabled=true;">True</button><button type="button" onclick="document.getElementById('a5').innerHTML = 'False. Sharing your own original work using peer-to-peer file-sharing technology is legal.'">False</button>
+<h2>Amy tells Daniel that the files are available. Daniel uses the same peer-to-peer file-sharing program to download Amy's camp pictures. That's copyright infringement.</h2> <p id="a6"> </p><button type="button" onclick="increase(); disabled=true;">True</button><button type="button" onclick="document.getElementById('a6').innerHTML = 'False. Amy took the pictures, so she is the copyright holder, and she has given Daniel permission to download.'">False</button>
+<h2>Jason copies the entire last chapter from the final Harry Potter book to his commercial blog without any additional commentary. Since he only used part of the work, Jason would be protected by fair use.</h2> <p id="a7"> </p><button type="button" onclick="increase(); disabled=true;">True</button><button type="button" onclick="document.getElementById('a7').innerHTML = 'False. Given the amount and significance of the portion Jason has taken, the commercial benefit he would receive, and the likely harm to the market for the Harry Potter book, a court would be unlikely to view his use as a fair use.'">False</button>
+<h2>Kathy downloaded a few photos of local organic farms from Flickr.com's Creative Commons (CC) pool. She follows the rules of the photographer's specific CC license and uses them in her digital video about sustainable agriculture. That's OK.</h2> <p id="a8"> </p><button type="button" onclick="document.getElementById('a8').innerHTML = 'True. Kathy can legally use the photos as long as she follows the rules of the license.'">True</button><button type="button" onclick="increase(); disabled=true;" >False</button>
+<h2>Dwight finds a peer-to-peer (P2P) network that offers free music downloads. He owns all but one of his favorite band's CDs, and he finds that particular CD on the network. He's too cheap to buy it, so he downloads the songs. He's not committing copyright infringement.</h2> <p id="a9"> </p><button type="button" onclick="increase(); disabled=true;">True</button><button type="button" onclick="document.getElementById('a9').innerHTML = 'False. Unless Dwight has permission from the copyright holders (band/publisher/songwriter etc.) it would be copyright infringement.'">False</button>
+<h2>Paula read an interesting article about the making of the film Titanic and wants to use a short quote in her cinema review paper for journalism class. That's copyright infringement.</h2> <p id="a10"> </p><button type="button" onclick="increase(); disabled=true;">True</button><button type="button" onclick="document.getElementById('a10').innerHTML = 'False. Since she is using a short quotation for the purpose of scholastic commentary, it would be fair use.'">False</button>
+<h2>The Public Domain is a polar research station in Antarctica.</h2> <p id="a11"> </p><button type="button" onclick="increase(); disabled=true;">True</button><button type="button" onclick="document.getElementById('a11').innerHTML = 'False! Public Domain refers to works that are not subject to copyright restrictions, so they are free to use. Public domain material can include works that are not copyrightable, are designated for free and unlimited public access by the creator, or are no longer protected by copyright law because the copyright status has expired or been forfeited by the owner.'">False</button>
+<h2>Adam recorded a video for his YouTube channel about the upcoming Senate elections and includes an official photo taken by a government employee and four bills authored by the incumbent that Adam found on the Senate's website. That's copyright infringement.</h2> <p id="a12"> </p><button type="button" onclick="increase(); disabled=true;">True</button><button type="button" onclick="document.getElementById('a12').innerHTML = 'False. Works produced by the U.S. government, or any U.S. government agency, are in the public domain. The texts of legal cases and statutes produced by the federal government are also in the public domain.'">False</button>
+<h2>Justin downloaded the black-and-white horror classic Night of the Living Dead from the Internet Archive and decided to mix an audio sample from the film into one of his original songs. That's copyright infringement.</h2> <p id="a13"> </p><button type="button" onclick="increase(); disabled=true;">True</button><button type="button" onclick="document.getElementById('a13').innerHTML = 'False. The copyright for Night of the Living Dead is part of the wonderful wealth of the public domain. Justin is free to be as creative as he wants with public domain material.'">False</button>
+<h2>Since Richard forgot to register his screenplay before he sent it out to agents for review, he's no longer eligible to copyright it.</h2> <p id="a14"> </p><button type="button" onclick="increase(); disabled=true;">True</button><button type="button" onclick="document.getElementById('a14').innerHTML = 'False. Copyright protection is automatic once your original work is in a fixed, tangible form.'">False</button>
+
+<script>
+var i=0;
+
+function increase()
+{
+i++;
+document.getElementById('counter').innerHTML= +i;
+}
+
+
+</script>
+
+
+<p>Type your name and take a screen shot of your results.</p>
+
+<form >
+  First name:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="">
+  <br>
+</form> 
+<p>The number of wrong guesses:<b id="counter">0</b></p>
+
+</body>
+</html>
